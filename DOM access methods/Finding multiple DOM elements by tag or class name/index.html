@@ -4,25 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Finding multiple DOM elements by tag or class name</title>
-    <style>
-
-        body{
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            width: 800px;
-            height: 330px;
-            margin: 100px auto;
-            padding: 30px;
-            border: 15px #EDEDED solid;
-        }
-        
-        .container p {
-            font-size: 18px;
-        }
-
-        .container .images{
-            text-align: center; 
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -43,31 +25,6 @@
         </div>
     </div>
     
-    <script>
-        var headingEl = document.getElementById("heading");
-        headingEl.innerHTML = "All about cats";
-        /* 
-            The problem with the below approach is it brings all the span tags in the entire page and saves it in the variable animalEls
-            as a HTMLCollection. So we may also get unwanted span tags 
-        */
-        // storing all the span elements as HTMLCollection
-        var spanEls = document.getElementsByTagName("span");
-        // console.log( spanEls ); for Debugging purpose
-        
-        for( var i = 0; i < spanEls.length; ++i ){
-            spanEls[i].innerHTML = "cat";
-        }
-       
-        // So, let use below approach
-        // storing all the elements with class animal as a HTMLCollection
-        var animalEls = document.getElementsByClassName("animal");
-        // console.log( animalEls );  // for debugging purpose
-
-        for ( var i = 0; i < animalEls.length; ++i ){
-            animalEls[i].innerHTML = "cat";
-        }
-    </script>
-
+    <script src="app.js"></script>
 </body>
-
 </html>

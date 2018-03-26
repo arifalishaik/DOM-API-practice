@@ -1,0 +1,16 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 800px;
+    height: 330px;
+    margin: 100px auto;
+    padding: 30px;
+    border: 15px #EDEDED solid;
+}
+
+.container p {
+    font-size: 18px;
+}
+
+.container .images {
+    text-align: center;
+}
