@@ -1,0 +1,17 @@
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    width: 800px;
+    height: 550px;
+    margin: 50px auto;
+    background-color: orange;
+    border: 1px #e7e7e7 solid;
+}
+
+.container {
+    padding: 20px;
+}
+
+.container .doth {
+    color: blue;
+}

@@ -5,22 +5,14 @@ I have been trying to manipulate DOM using plane JavaScript through out this pro
 ## Concepts Learnt:
 
 * document.querySelectorAll("CSS Selector");
-* querySelectorAll() method returns a NodeList of given CSS Selector
-* document.querySelector() is similar to above method except that we are selcting a sinlge element with a CSS Selector
-  ```
-  * document.querySelector('#id');
-  ```
 
 ```js
-// A NodeList of all p tags with class animal
-var nameEls = document.querySelectorAll("p .animal");
-// console.log( nameEls );
-// NodeList[0]
-// console.log( nameEls[0] );
-
-for ( var i = 0; i < nameEls.length; ++i ) {
-    nameEls[i].innerHTML = "cat";
-}
+        // Step 1: Store all doth that are inside lis in dothEls
+        var dothEls = document.querySelectorAll("ul .doth");
+        // Step 2: Iterate through them and change doth to does
+        for ( var i = 0; i < dothEls.length; ++i ) {
+            dothEls[i].innerHTML = "does";
+        }
 ```
 
 Below are two pictures before and after adding JavaScript to our WebPage
