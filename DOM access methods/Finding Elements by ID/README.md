@@ -1,4 +1,4 @@
-## Adding JavaScript to a Wesbsite 
+## Finding Elements by ID and manipulating the DOM
 
 I have been trying to manipulate DOM using plane JavaScript through out this project <br />
 

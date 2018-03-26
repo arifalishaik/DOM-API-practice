@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Finding multiple DOM elements by tag or class name</title>
+    <style>
+
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            width: 800px;
+            height: 330px;
+            margin: 100px auto;
+            padding: 30px;
+            border: 15px #EDEDED solid;
+        }
+        
+        .container p {
+            font-size: 18px;
+        }
+
+        .container .images{
+            text-align: center; 
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 id="heading">All about dogs</h1>
+        <p>
+            The domestic
+            <span class="animal">dog</span> is known as man's best friend. The
+            <span class="animal">dog</span> was the first domesticated animal and has been widely kept as a working, hunting, and pet companion. According
+            to recent coarse estimates, there are currently between 700 million and one billion
+            <span class="animal">dog</span>s, making them the most abundant predators in the world.
+            <a href="http://en.wikipedia.org/wiki/Dog">Read more on Wikipedia</a>.
+        </p>
+
+        <div class="images">
+            <img src="https://www.kasandbox.org/programming-images/animals/dog_sleeping-puppy.png" height="150">
+            <img src="https://www.kasandbox.org/programming-images/animals/dogs_collies.png" height="150">
+        </div>
+    </div>
+    
+    <script>
+        var headingEl = document.getElementById("heading");
+        headingEl.innerHTML = "All about cats";
+        /* 
+            The problem with the below approach is it brings all the span tags in the entire page and saves it in the variable animalEls
+            as a HTMLCollection. So we may also get unwanted span tags 
+        */
+        // storing all the span elements as HTMLCollection
+        var spanEls = document.getElementsByTagName("span");
+        // console.log( spanEls ); for Debugging purpose
+        
+        for( var i = 0; i < spanEls.length; ++i ){
+            spanEls[i].innerHTML = "cat";
+        }
+       
+        // So, let use below approach
+        // storing all the elements with class animal as a HTMLCollection
+        var animalEls = document.getElementsByClassName("animal");
+        // console.log( animalEls );  // for debugging purpose
+
+        for ( var i = 0; i < animalEls.length; ++i ){
+            animalEls[i].innerHTML = "cat";
+        }
+    </script>
+
+</body>
+
+</html>

@@ -5,7 +5,7 @@ I have been trying to manipulate DOM using plane JavaScript through out this pro
 ## Concepts Learnt:
 
 * Store the element to be manipulated in a variable
-* apply the DOM method on this variable e.g innerHTML to change the content 
+* apply the DOM method on this variable e.g see below
 
 ```
 // h1 element 
@@ -20,15 +20,15 @@ Below are two pictures showing before and after adding JavaScript to our WebPage
 ### Before Adding JS
 
 <p align="center">
-  <img src="before_JS_Loads.png" alt="Size Limit example" >
+  <img src="img/before_JS_Loads.png" alt="Size Limit example" >
 </p>
 
-#### TIP : Comment the script tag to fail the JS from loading
+#### TIP : Here Java Script is manipulating the DOM
 
 ### After Adding JS
 
 <p align="center">
-  <img src="after_JS_Loads.png" alt="Size Limit example" >
+  <img src="img/after_JS_Loads.png" alt="Size Limit example" >
 </p> 
 
 
