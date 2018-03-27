@@ -6,7 +6,7 @@ I have been trying to manipulate DOM using plane JavaScript through out this pro
 
 * clientX
 * clientY
-* EventListeners
+* How to subtract offset width and height from the mouse current position
 
 ```js
 var catPic = document.getElementById("cat-pic");
