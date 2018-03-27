@@ -1,0 +1,16 @@
+.right-answer {
+    background: rgb(0, 255, 9);
+}
+
+.wrong-answer {
+    background: rgb(237, 28, 0);
+}
+
+
+body{
+    width: 500px;
+    height: 200px;
+    margin: 150px auto;
+    border: 2px salmon solid;
+    padding: 25px;
+}
