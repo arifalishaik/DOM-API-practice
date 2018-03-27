@@ -8,7 +8,7 @@ I have been trying to manipulate DOM using plane JavaScript through out this pro
 * clientY
 * EventListeners
 
-  ```js
+```js
     // 1. Find and store the element we want to listen to events on.
     var imgEl = document.getElementById("face");
 
@@ -25,7 +25,7 @@ I have been trying to manipulate DOM using plane JavaScript through out this pro
 
     // 3. Add the event listener for the element and function
     imgEl.addEventListener( "mousemove", onMouseMove );
- ```
+```
 
 Below are two pictures before and after adding JavaScript to our WebPage
 
