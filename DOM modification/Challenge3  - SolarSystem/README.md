@@ -9,31 +9,16 @@ I have been trying to manipulate DOM using plane JavaScript through out this pro
 
 
 ```js
-var nameEls = document.querySelectorAll("p .animal");
-for ( var i = 0; i < nameEls.length; i++ ) {
-    // <strong>
-    var strongEl = document.createElement("strong");
-    // "cat"
-    var strongText = document.createTextNode("cat");
-    // <strong> cat <strong>
-    strongEl.appendChild( strongText );
-    nameEls[i].innerHTML = "";
-    nameEls[i].appendChild( strongEl );
+//  </div> 1
+var planetEl = document.createElement('div');
+planetEl.style.backgroundColor = "orange";
+planetEl.className = "planet";
+document.body.appendChild(planetEl);
 
-    nameEls[i].className += " catcolors";
-    nameEls[i].style.fontSize = 20+"px";
-}
-
-// <img src="https://www.kasandbox.org/programming-images/animals/cat.png" alt="Photo of Cat">
-var catEl = document.createElement("img");
-catEl.src = "https://www.kasandbox.org/programming-images/animals/cat.png";
-catEl.alt = "Photo of Cute Cat";
-
-var imagesEl = document.getElementsByClassName("images");
-// console.log( imagesEl );
-for ( var i = 0; i < imagesEl.length; ++i ){
-    imagesEl[i].appendChild( catEl );
-}
+// <div> 2
+var moonEl = document.createElement('div');
+moonEl.className = "moon";
+planetEl.appendChild(moonEl);
 ```
 
 Below are two pictures before and after adding JavaScript to our WebPage

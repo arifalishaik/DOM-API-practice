@@ -1,0 +1,10 @@
+
+
+.container{
+        height: 200px;
+        width: 500px;
+        margin: 150px auto;
+        border: 1px slategray solid;
+        box-shadow: 2px 2px 2px 2px dimgray;
+        padding: 20px;
+}
