@@ -34,4 +34,3 @@ Below are two pictures before and after adding JavaScript to our WebPage
 
 
 #### In the second image the DOM has been manipulated 
-#### The height of every image has been modified

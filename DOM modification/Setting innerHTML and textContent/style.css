@@ -1,0 +1,18 @@
+.catcolors {
+    color: orange;
+    background-color: black;
+}
+
+body{
+    height: 400px;
+    width: 500px;
+    margin: 10px auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+}
+
+.container{
+    border: 1px red solid;
+    box-shadow: 2px 2px 2px 2px gold;
+    padding: 30px;
+}
