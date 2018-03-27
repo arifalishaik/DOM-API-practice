@@ -9,22 +9,19 @@ I have been trying to manipulate DOM using plane JavaScript through out this pro
 * EventListeners
 
 ```js
-    // 1. Find and store the element we want to listen to events on.
-    var imgEl = document.getElementById("face");
+var catPic = document.getElementById("cat-pic");
+var onCatClick = function (e) {
+    console.log(e);
 
-    // 2. Define the function that will respond to the event.
-    var onMouseMove = function(e){
-        // console.log(e);
-        // <div>
-        var divEl = document.createElement("div");
-        divEl.className = "beard";
-        document.body.appendChild( divEl );
-        divEl.style.top = e.clientY + "px";
-        divEl.style.left = e.clientX + "px";
-    }
+    var stashePic = document.getElementById("mustache-pic");
+    var xPosition = e.clientX - (stashePic.offsetWidth / 2);
+    var yPosition = e.clientY - (stashePic.offsetHeight / 2);
 
-    // 3. Add the event listener for the element and function
-    imgEl.addEventListener( "mousemove", onMouseMove );
+    stashePic.style.top = yPosition + "px";
+    stashePic.style.left = xPosition + "px";
+};
+
+catPic.addEventListener("click", onCatClick);
 ```
 
 Below are two pictures before and after adding JavaScript to our WebPage
