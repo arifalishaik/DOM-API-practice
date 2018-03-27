@@ -4,7 +4,11 @@ I have been trying to manipulate DOM using plane JavaScript through out this pro
 
 ## Concepts Learnt:
 
-* To be updated
+* innerHTML is a DOM property that can be used to pass text or HTML to change the contents of the targeted node or element
+* textContent is similar to innerHTML except that you cannot pass HTML through it
+* When you try to do complex DOM manipulations both innerHTML and textContent may turnoff the eventListeners, so we need to be very careful while using them
+* You can use innerHTML DOM property to pass entire webpages 
+* But, doing that may quickly make your code very messy and hard to debug
 
 
 ```js
