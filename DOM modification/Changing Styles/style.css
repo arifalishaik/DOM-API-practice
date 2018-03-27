@@ -1,0 +1,23 @@
+body{
+    height: 300px;
+    width: 800px;
+    margin: 100px auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+}
+
+.container {
+    border: 1px salmon solid;
+    box-shadow: 4px 4px 0px 0px wheat;
+    padding: 40px;
+}
+
+
+.image {
+    text-align: center;
+}
+        p .animal {
+            color: red;
+        }
+
+        

@@ -8,16 +8,28 @@ I have been trying to manipulate DOM using plane JavaScript through out this pro
 
 
 ```js
-var imgTags = document.getElementsByTagName("img");
-// console.log(imgTags); for debugging purposes
-for (var i = 0; i < imgTags.length; ++i) {
-    imgTags[i].src = "https://www.kasandbox.org/programming-images/animals/cat.png";
+var imageEls = document.getElementsByTagName("img");
+for (var i = 0; i < imageEls.length; i++) {
+    imageEls[i].src = "https://www.kasandbox.org/programming-images/animals/cat.png";
 }
 
-var linkEls = document.querySelectorAll('a[href*="Dog"]');
-for (var i = 0; i < linkEls.length; ++i) {
+var linkEls = document.querySelectorAll("a[href*=\"Dog\"]");
+for (var i = 0; i < linkEls.length; i++) {
     linkEls[i].href = "http://en.wikipedia.org/wiki/Cat";
 }
+
+var headingEl = document.querySelector("#heading");
+headingEl.innerHTML = "All about cats";
+
+var nameEls = document.querySelectorAll("p .animal");
+for (var i = 0; i < nameEls.length; i++) {
+    nameEls[i].innerHTML = "cat";
+}
+
+var headingEl = document.getElementById("heading");
+headingEl.style.color = "Orange";
+headingEl.style.backgroundColor = "Black";
+headingEl.style.textAlign = "center"
 ```
 
 Below are two pictures before and after adding JavaScript to our WebPage
