@@ -1,0 +1,16 @@
+#cat {
+    position: absolute;
+    left: 0px;
+    top: 3px;
+}
+
+body{
+    width: 800px;
+    height: 500px;
+    margin: 30px auto;
+    border: 1px peru solid;
+}
+
+.container{
+    color: aqua;
+}
