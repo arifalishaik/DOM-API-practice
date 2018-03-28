@@ -1,0 +1,13 @@
+body{
+    width: 900px;
+    height: 500px;
+    margin: 50px auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+.container div{
+    margin: 10px auto;
+    border: 1px plum solid;
+    padding: 30px;
+}
