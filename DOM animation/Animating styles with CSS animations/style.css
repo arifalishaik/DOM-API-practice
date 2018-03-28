@@ -1,0 +1,31 @@
+ @keyframes getbigger {
+     from {
+         width: 50px;
+     }
+     to {
+         width: 300px;
+     }
+ }
+
+ @-webkit-keyframes getbigger {
+     from {
+         width: 50px;
+     }
+     to {
+         width: 300px;
+     }
+ }
+
+ #ohnoes {
+     animation-name: getbigger;
+     animation-duration: 3s;
+     /* vendor prefixes */
+     -webkit-animation-name: getbigger;
+     -webkit-animation-duration: 3s;
+ }
+
+ 
+ #countdown:hover {
+     font-size: 150px;
+     transition: font-size 1s linear;
+ }
