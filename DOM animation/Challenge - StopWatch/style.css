@@ -1,0 +1,17 @@
+body{
+    height: 100px;
+    width: 600px;
+    margin: 100px auto;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+
+.container{
+    border: 2px rgb(247, 32, 9) solid;
+    box-shadow: 3px 3px 0px 0px darkorange;
+    padding: 50px;
+}
+
+.container button{
+    font-size: 30px;
+}

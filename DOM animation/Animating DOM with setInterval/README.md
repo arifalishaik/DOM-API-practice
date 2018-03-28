@@ -24,4 +24,4 @@ Below are two pictures before and after adding JavaScript to out WebPage
 </p> 
 
 
-#### In the second image the DOM has been manipulated
+#### In the second image the DOM has been manipulated . The timer keeps decresing by count of 1
